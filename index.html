@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Mini Loja</title>
+</head>
+<body class="bg-light">
+    <header>
+        <div class="container-fluid bg-dark">
+            <h1 class="text-center text-white p-3">Minha loja</h1>
+        </div>
+    </header>
+    <section>
+       <div class="mt-5 container-fluid d-flex align-items-center justify-content-center flex-column btn-ligth">
+            <h3 class="">Produtos</h3>
+            <h6>Lista de Produtos da minha loja</h6>
+            <div id="card" class="card w-50 bg-dark text-white">
+                <div class="card-body">
+                    <h5>Produto</h5>
+                    <input id="produto" class="p-1 w-100 mb-2" type="text" placeholder="Digite o nome do produto">
+                    <h5>Preço</h5>
+                    <input type="number" name="preco" id="preco" min="1" class="w-100 p-1" placeholder="Digite o valor do produto">
+                    <button type="submit" onclick="Salvar()" class="btn btn-success mt-3 me-3">salvar</button>
+
+                    <button class="btn btn-danger mt-3" onclick="produto.cancelar()">Cancelar
+                    </button>
+
+                </div>
+            </div>
+        </div> 
+        <table id="tabela" class="table table-dark w-50 m-auto mt-3 text-center">
+            <thead>
+                <th scope="col">id</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Ações</th>
+            </thead>
+            <tbody id="tbody">
+              
+            </tbody>
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
