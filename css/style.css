@@ -1,0 +1,9 @@
+@media (max-width:500px){
+    
+    #card{
+        width: 100vw !important; 
+    }
+    #tabela{
+        width: 100vw !important;     
+    }
+}
