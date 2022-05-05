@@ -13,10 +13,10 @@ function Salvar(){
     const produto = document.querySelector('#produto').value
     const preco = document.querySelector('#preco').value
     let add = lista.push(Produto(id,produto,preco))
-
-  
+    this.produto.value = ''
+    this.preco.value = ''
     listarProduto();
- 
+
 }
 
 function listarProduto(){
